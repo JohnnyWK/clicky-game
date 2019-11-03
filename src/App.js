@@ -32,7 +32,10 @@ const styles = {
     // justifyContent: "center",
     alignItems: "center",
     textAlign: "center"
-}
+},
+  h1text: {
+    textAlign: "center"
+  }
 };
 
 function Header() {
@@ -107,7 +110,7 @@ class App extends Component {
         <div className="row" style={styles.navbarStyle}>
           <nav className="navbar"  style={styles.navElements}>
             <div className="col-md-4">
-              <h1>Clicky Game</h1>
+              <h1 style={styles.h1text}>Clicky Game</h1>
             </div>
             <div className="col-md-4">
               <p>score: {currentScore} | high score: {highScore}</p>
