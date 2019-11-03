@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
+// import Header from "./components/Header/Header";
 import friends from "./friends.json";
 
 let currentScore = 0;
@@ -18,8 +18,30 @@ const styles = {
     justifyContent: "center",
     width: "100%",
     fontSize: "36px"
-  }
+  },
+  head: {
+    background: "black",
+    width: "100%",
+    height: "12%",
+    color: "white",
+    textAlign: "center"
+},
+  headtext: {
+    // marginRight: "10%",
+    marginLeft: "10%",
+    // justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center"
+}
 };
+
+function Header() {
+  return (
+      <div style={styles.head}>
+          <h3 style={styles.headtext}>To begin, click on a picture.  If you click the same picture more than once, YOU LOSE!</h3>
+      </div>
+  );
+}
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
