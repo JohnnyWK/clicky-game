@@ -8,7 +8,6 @@ const styles = {
         color: "white"
     },
     headtext: {
-        // width: "80%",
         marginRight: "10%",
         marginLeft: "10%",
         justifyContent: "center",
