@@ -68,14 +68,14 @@ class App extends Component {
         console.log(friend)
       }
       else if (friend.id === id && friend.clicked === true) {
-        alert("you wrong")
+        alert("You blew it!!")
         if (currentScore > highScore) {
           highScore = currentScore
         }
         this.gameOver()
       }
       if (currentScore === 12) {
-        alert("you won")
+        alert("You Win!!!")
         highScore = 12
         this.gameOver()
       }
